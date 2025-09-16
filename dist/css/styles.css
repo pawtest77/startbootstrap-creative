@@ -10993,3 +10993,54 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+/* Persona Theme Colors */
+:root {
+  --persona-red: #e60012;
+  --persona-black: #111;
+  --persona-white: #fff;
+}
+
+/* Hero Title */
+.hero-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--persona-white);
+  text-shadow: 3px 3px 0 var(--persona-black), 6px 6px 0 var(--persona-red);
+  transform: skew(-8deg);
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Section Title */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--persona-red);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 var(--persona-black);
+  animation: rotateIn 1s ease-out;
+}
+
+/* Our Client Images */
+#our-client img {
+  border: 4px solid var(--persona-red);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#our-client img:hover {
+  transform: scale(1.05) rotate(-3deg);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from { transform: translateX(-100%) skew(-8deg); opacity: 0; }
+  to { transform: translateX(0) skew(-8deg); opacity: 1; }
+}
+
+@keyframes rotateIn {
+  from { transform: rotate(-15deg) scale(0.8); opacity: 0; }
+  to { transform: rotate(0) scale(1); opacity: 1; }
+}
