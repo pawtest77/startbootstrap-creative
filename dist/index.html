@@ -1,253 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>NyaTest | Game & App Testing Service</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">nyatest: Game Test Service</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#our-client">Our Client</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <img src="assets/img/nyatest.png" alt="Nyatest mascot" style="max-width: 200px;" />
-                        <h1 class="text-white font-weight-bold">NyaTest – Game & App Testing Service</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Reliable testing with cat-like precision. We help you launch bug-free games, apps, and websites with a purr-sonal touch.</p>
-                        <a class="btn btn-primary btn-xl" href="https://wa.me/6281280002702" target="_blank">Chat via WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Manual QA Services You Can Trust</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">We help game studios, developers, and startups test their apps, games, and websites—covering functionality, usability, and bugs across real devices. Affordable, accurate, and developer-friendly.</p>
-                        <a class="btn btn-light btn-xl" href="#services">See Our Services</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>NyaTest | Game & App Testing Service</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: 'Merriweather Sans', sans-serif; background: #111; color: #fff; }
+    h1, h2, h3, h4 { font-family: 'Anton', sans-serif; letter-spacing: 1px; }
+    .navbar { background: #000; }
+    .masthead {
+      background: linear-gradient(135deg, #e60012 40%, #000 40%);
+      height: 100vh; display: flex; align-items: center; text-align: center;
+    }
+    .masthead h1 { font-size: 3rem; animation: slideIn 1.2s ease-out; }
+    @keyframes slideIn { from {transform: translateX(-100%);} to {transform: translateX(0);} }
+    @keyframes rotateIn { from {transform: rotate(-15deg) scale(0.8);} to {transform: rotate(0) scale(1);} }
+    section h2 { animation: rotateIn 0.8s ease-out; }
+    #our-client img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    #our-client img:hover { transform: scale(1.05) rotate(-2deg); }
+    .portfolio-box-caption { position: absolute; bottom: 0; background: rgba(0,0,0,0.6); width: 100%; text-align: center; }
+  </style>
+</head>
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="#page-top">NyaTest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#our-client">Our Client</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Masthead -->
+<header class="masthead">
+  <div class="container px-4 px-lg-5">
+    <img src="assets/img/nyatest.png" alt="Nyatest mascot" style="max-width: 200px;" class="mb-4 animate__animated animate__fadeInDown"/>
+    <h1 class="text-white">NyaTest – Game & App Testing Service</h1>
+    <hr class="divider" />
+    <p class="text-white-75 mb-4">Reliable testing with cat-like precision.</p>
+    <a class="btn btn-danger btn-xl" href="https://wa.me/6281280002702" target="_blank">Chat via WhatsApp</a>
+  </div>
+</header>
+
+<!-- About -->
+<section class="page-section bg-primary" id="about">
+  <div class="container text-center">
+    <h2 class="text-white">Manual QA Services You Can Trust</h2>
+    <hr class="divider divider-light" />
+    <p class="text-white-75 mb-4">We help game studios, developers, and startups test apps, games, and websites.</p>
+    <a class="btn btn-light btn-xl" href="#services">See Our Services</a>
+  </div>
+</section>
+
+<!-- Services -->
 <section class="page-section" id="services">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">At Your Service</h2>
-        <hr class="divider" />
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-controller fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">Play Testing</h3>
-                    <p class="text-muted mb-0">We ensure the gameplay feels smooth, fun, and bug-free before launch.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-journal-check fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">Test Case Making</h3>
-                    <p class="text-muted mb-0">Designing structured test scenarios to verify every feature works as intended.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-bug fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">Bug Hunting</h3>
-                    <p class="text-muted mb-0">Identifying and reporting issues in detail so developers can fix them quickly.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="mt-5">
-                    <div class="mb-2"><i class="bi-check-circle fs-1 text-primary"></i></div>
-                    <h3 class="h4 mb-2">User Acceptance Testing</h3>
-                    <p class="text-muted mb-0">Testing the game from a player’s perspective to ensure it meets expectations.</p>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <h2 class="text-center">At Your Service</h2>
+    <hr class="divider" />
+    <div class="row text-center">
+      <div class="col-lg-3 col-md-6 mt-5">
+        <i class="bi-controller fs-1 text-danger"></i>
+        <h3 class="h4">Play Testing</h3>
+        <p class="text-muted">Smooth, fun, bug-free gameplay before launch.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-5">
+        <i class="bi-journal-check fs-1 text-danger"></i>
+        <h3 class="h4">Test Case Making</h3>
+        <p class="text-muted">Structured scenarios for every feature.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-5">
+        <i class="bi-bug fs-1 text-danger"></i>
+        <h3 class="h4">Bug Hunting</h3>
+        <p class="text-muted">Detailed reports for fast fixes.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-5">
+        <i class="bi-check-circle fs-1 text-danger"></i>
+        <h3 class="h4">UAT</h3>
+        <p class="text-muted">Player’s perspective testing.</p>
+      </div>
     </div>
+  </div>
 </section>
-<!-- Our Client-->
-<style>
-#our-client img {
-    width: 100%;
-    aspect-ratio: 16/9; /* rasio landscape */
-    object-fit: cover;  /* biar proporsional */
-    border-radius: 8px; /* opsional */
-}
-</style>
-<div id="our-client">
-    <div class="container-fluid p-0">
-        <div class="text-center mb-5">
-            <h2 class="section-heading text-uppercase">Our Client</h2>
-        </div>
-        <div class="row g-0">
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="https://store.steampowered.com/app/2932110/Asbak/" target="_blank">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="Asbak on Steam" />
-                    <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Steam</div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="https://store.steampowered.com/app/2398140/Bail_Force_Cyberpunk_Bounty_Hunters/" target="_blank">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="Bail Force on Steam" />
-                    <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Steam</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="https://store.steampowered.com/app/2440010/Twilight_Memoria__Freedom" target="_blank">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="Twilight Memoria on Steam" />
-                    <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Steam</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="https://duodolgames.itch.io/bash-and-crash" target="_blank">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="Bash and Crash on Itch.io" />
-                    <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Itch.io</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="https://play.google.com/store/apps/details?id=com.arcadesindo.tutuvsasepvillain" target="_blank">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="Tutu vs Asep Villain on Google Play" />
-                    <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Google Play</div>
-                    </div>
-                </a>
-            </div>
-        </div>
+<!-- Our Client -->
+<div id="our-client" class="page-section">
+  <div class="container-fluid p-0">
+    <div class="text-center mb-5">
+      <h2 class="section-heading">Our Client</h2>
     </div>
-<!-- Call to action-->
-<section class="page-section text-white" style="background: url('assets/img/bg1.webp') center center/cover no-repeat;">
-    <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4" style="color: black;">Get to Know Us Better</h2>
-        <a class="btn btn-danger btn-xl m-2" href="https://www.youtube.com/@nyatestcom" target="_blank">
-            🎥 YouTube
+    <div class="row g-0">
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="https://store.steampowered.com/app/2932110/Asbak/" target="_blank">
+          <img src="assets/img/portfolio/thumbnails/1.jpg" alt="Asbak on Steam" />
+          <div class="portfolio-box-caption"><div class="project-category">Steam</div></div>
         </a>
-        <a class="btn btn-primary btn-xl m-2" href="https://drive.google.com/drive/u/1/folders/bc1qnx253th4lde8plfvt6zx03v45s62p6llylg63g" target="_blank">
-            📑 Reports
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="https://store.steampowered.com/app/2398140/Bail_Force_Cyberpunk_Bounty_Hunters/" target="_blank">
+          <img src="assets/img/portfolio/thumbnails/2.jpg" alt="Bail Force on Steam" />
+          <div class="portfolio-box-caption"><div class="project-category">Steam</div></div>
         </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="https://store.steampowered.com/app/2440010/Twilight_Memoria__Freedom" target="_blank">
+          <img src="assets/img/portfolio/thumbnails/3.jpg" alt="Twilight Memoria on Steam" />
+          <div class="portfolio-box-caption"><div class="project-category">Steam</div></div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="https://duodolgames.itch.io/bash-and-crash" target="_blank">
+          <img src="assets/img/portfolio/thumbnails/4.jpg" alt="Bash and Crash on Itch.io" />
+          <div class="portfolio-box-caption"><div class="project-category">Itch.io</div></div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="https://play.google.com/store/apps/details?id=com.arcadesindo.tutuvsasepvillain" target="_blank">
+          <img src="assets/img/portfolio/thumbnails/5.jpg" alt="Tutu vs Asep Villain on Google Play" />
+          <div class="portfolio-box-caption"><div class="project-category">Google Play</div></div>
+        </a>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Call to Action -->
+<section class="page-section text-center" style="background: url('assets/img/bg1.webp') center/cover no-repeat;">
+  <h2 class="mb-4" style="color: black;">Get to Know Us Better</h2>
+  <a class="btn btn-danger btn-xl m-2" href="https://www.youtube.com/@nyatestcom" target="_blank">🎥 YouTube</a>
+  <a class="btn btn-primary btn-xl m-2" href="https://drive.google.com/drive/u/1/folders/bc1qnx253th4lde8plfvt6zx03v45s62p6llylg63g" target="_blank">📑 Reports</a>
 </section>
-<!-- Contact Section -->
+
+<!-- Contact -->
 <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Let's Get In Touch!</h2>
-                    <hr class="divider" />
-                    <p class="text-muted mb-5">Send us a message and we'll get back to you as soon as possible.</p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                <div class="col-lg-6">
-                    <form id="contactForm" action="https://formspree.io/f/mpwjbvoa" method="POST">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
-                            <label for="email">Email address</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                        <div class="d-grid">
-                            <button id="submitBtn" class="btn btn-primary btn-xl" type="submit">
-                                <span id="btnText">Send Message</span>
-                                <span id="btnSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                    </form>
-                    <div id="formAlert" class="mt-3"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="container text-center">
+    <h2 class="mt-0">Let's Get In Touch!</h2>
+    <hr class="divider" />
+    <form id="contactForm" action="https://formspree.io/f/mpwjbvoa" method="POST" class="mx-auto" style="max-width:500px;">
+      <input class="form-control mb-3" type="email" name="email" placeholder="Your Email" required />
+      <textarea class="form-control mb-3" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button id="submitBtn" class="btn btn-danger btn-xl" type="submit">Send Message</button>
+    </form>
+    <div id="formAlert" class="mt-3"></div>
+  </div>
+</section>
 
-    <script>
-    document.getElementById("contactForm").addEventListener("submit", async function(e) {
-        e.preventDefault();
-        const form = e.target;
-        const data = new FormData(form);
-        const alertBox = document.getElementById("formAlert");
-        const btn = document.getElementById("submitBtn");
-        const btnText = document.getElementById("btnText");
-        const btnSpinner = document.getElementById("btnSpinner");
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  const alertBox = document.getElementById("formAlert");
+  const btn = document.getElementById("submitBtn");
+  btn.disabled = true;
+  btn.textContent = "Sending...";
+  try {
+    const res = await fetch(form.action, { method: form.method, body: data, headers: { 'Accept': 'application/json' } });
+    if(res.ok){ alertBox.innerHTML='<div class="alert alert-success">✅ Message sent!</div>'; form.reset(); }
+    else { alertBox.innerHTML='<div class="alert alert-danger">❌ Error, try again.</div>'; }
+  } catch { alertBox.innerHTML='<div class="alert alert-danger">⚠️ Network error.</div>'; }
+  btn.disabled = false; btn.textContent = "Send Message";
+});
+</script>
 
-        btn.disabled = true;
-        btnText.textContent = "Sending...";
-        btnSpinner.classList.remove("d-none");
-
-        try {
-            const response = await fetch(form.action, {
-                method: form.method,
-                body: data,
-                headers: { 'Accept': 'application/json' }
-            });
-
-            if (response.ok) {
-                alertBox.innerHTML = '<div class="alert alert-success">✅ Your message has been sent successfully!</div>';
-                form.reset();
-            } else {
-                alertBox.innerHTML = '<div class="alert alert-danger">❌ Oops! Something went wrong, please try again.</div>';
-            }
-        } catch (error) {
-            alertBox.innerHTML = '<div class="alert alert-danger">⚠️ Network error, please try again later.</div>';
-        }
-
-        btn.disabled = false;
-        btnText.textContent = "Send Message";
-        btnSpinner.classList.add("d-none");
-
-        setTimeout(() => {
-            alertBox.innerHTML = "";
-        }, 5000);
-    });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
