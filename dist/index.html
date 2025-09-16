@@ -9,33 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:400,700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
   <style>
-    body { font-family: 'Merriweather Sans', sans-serif; background: #111; color: #fff; }
-    h1, h2, h3, h4 { font-family: 'Anton', sans-serif; letter-spacing: 1px; }
-    .navbar { background: #000; }
-    .masthead {
-      background: linear-gradient(135deg, #e60012 40%, #000 40%);
-      height: 100vh; display: flex; align-items: center; text-align: center;
-    }
-    .masthead h1 { font-size: 3rem; animation: slideIn 1.2s ease-out; }
-    @keyframes slideIn { from {transform: translateX(-100%);} to {transform: translateX(0);} }
-    @keyframes rotateIn { from {transform: rotate(-15deg) scale(0.8);} to {transform: rotate(0) scale(1);} }
-    section h2 { animation: rotateIn 0.8s ease-out; }
-    #our-client img {
-      width: 100%;
-      aspect-ratio: 16/9;
-      object-fit: cover;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-    #our-client img:hover { transform: scale(1.05) rotate(-2deg); }
-    .portfolio-box-caption { position: absolute; bottom: 0; background: rgba(0,0,0,0.6); width: 100%; text-align: center; }
+    /* Persona overrides */
+    .bg-primary { background-color: #e60012 !important; }
+    #services p { color: #fff !important; }
   </style>
 </head>
 <body id="page-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black" id="mainNav">
   <div class="container px-4 px-lg-5">
     <a class="navbar-brand" href="#page-top">NyaTest</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
@@ -53,9 +37,9 @@
 </nav>
 
 <!-- Masthead -->
-<header class="masthead">
-  <div class="container px-4 px-lg-5">
-    <img src="assets/img/nyatest.png" alt="Nyatest mascot" style="max-width: 200px;" class="mb-4 animate__animated animate__fadeInDown"/>
+<header class="masthead text-center text-white d-flex" style="background: linear-gradient(135deg, #e60012 40%, #000 40%); height:100vh;">
+  <div class="container my-auto">
+    <img src="assets/img/nyatest.png" alt="Nyatest mascot" style="max-width: 200px;" class="mb-4"/>
     <h1 class="text-white">NyaTest – Game & App Testing Service</h1>
     <hr class="divider" />
     <p class="text-white-75 mb-4">Reliable testing with cat-like precision.</p>
@@ -82,22 +66,22 @@
       <div class="col-lg-3 col-md-6 mt-5">
         <i class="bi-controller fs-1 text-danger"></i>
         <h3 class="h4">Play Testing</h3>
-        <p class="text-muted">Smooth, fun, bug-free gameplay before launch.</p>
+        <p>Smooth, fun, bug-free gameplay before launch.</p>
       </div>
       <div class="col-lg-3 col-md-6 mt-5">
         <i class="bi-journal-check fs-1 text-danger"></i>
         <h3 class="h4">Test Case Making</h3>
-        <p class="text-muted">Structured scenarios for every feature.</p>
+        <p>Structured scenarios for every feature.</p>
       </div>
       <div class="col-lg-3 col-md-6 mt-5">
         <i class="bi-bug fs-1 text-danger"></i>
         <h3 class="h4">Bug Hunting</h3>
-        <p class="text-muted">Detailed reports for fast fixes.</p>
+        <p>Detailed reports for fast fixes.</p>
       </div>
       <div class="col-lg-3 col-md-6 mt-5">
         <i class="bi-check-circle fs-1 text-danger"></i>
         <h3 class="h4">UAT</h3>
-        <p class="text-muted">Player’s perspective testing.</p>
+        <p>Player’s perspective testing.</p>
       </div>
     </div>
   </div>
@@ -111,33 +95,28 @@
     </div>
     <div class="row g-0">
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="https://store.steampowered.com/app/2932110/Asbak/" target="_blank">
-          <img src="assets/img/portfolio/thumbnails/1.jpg" alt="Asbak on Steam" />
-          <div class="portfolio-box-caption"><div class="project-category">Steam</div></div>
+        <a href="https://store.steampowered.com/app/2932110/Asbak/" target="_blank">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="Asbak on Steam" />
         </a>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="https://store.steampowered.com/app/2398140/Bail_Force_Cyberpunk_Bounty_Hunters/" target="_blank">
-          <img src="assets/img/portfolio/thumbnails/2.jpg" alt="Bail Force on Steam" />
-          <div class="portfolio-box-caption"><div class="project-category">Steam</div></div>
+        <a href="https://store.steampowered.com/app/2398140/Bail_Force_Cyberpunk_Bounty_Hunters/" target="_blank">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="Bail Force on Steam" />
         </a>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="https://store.steampowered.com/app/2440010/Twilight_Memoria__Freedom" target="_blank">
-          <img src="assets/img/portfolio/thumbnails/3.jpg" alt="Twilight Memoria on Steam" />
-          <div class="portfolio-box-caption"><div class="project-category">Steam</div></div>
+        <a href="https://store.steampowered.com/app/2440010/Twilight_Memoria__Freedom" target="_blank">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="Twilight Memoria on Steam" />
         </a>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="https://duodolgames.itch.io/bash-and-crash" target="_blank">
-          <img src="assets/img/portfolio/thumbnails/4.jpg" alt="Bash and Crash on Itch.io" />
-          <div class="portfolio-box-caption"><div class="project-category">Itch.io</div></div>
+        <a href="https://duodolgames.itch.io/bash-and-crash" target="_blank">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="Bash and Crash on Itch.io" />
         </a>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="https://play.google.com/store/apps/details?id=com.arcadesindo.tutuvsasepvillain" target="_blank">
-          <img src="assets/img/portfolio/thumbnails/5.jpg" alt="Tutu vs Asep Villain on Google Play" />
-          <div class="portfolio-box-caption"><div class="project-category">Google Play</div></div>
+        <a href="https://play.google.com/store/apps/details?id=com.arcadesindo.tutuvsasepvillain" target="_blank">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="Tutu vs Asep Villain on Google Play" />
         </a>
       </div>
     </div>
